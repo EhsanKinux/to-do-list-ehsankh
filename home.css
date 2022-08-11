@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e0e0e0;
+}
+
+.home-topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 20px 0 30px;
+}
+
+.left-bar{
+
+}
+
+.right-bar{
+    background-color: rgb(255, 100, 126);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 14px 12px 10px 12px;
+}
+
+.right-bar img{
+    width: 15px;
+}
+
+/* ----task creation---- */
+.task-overview{
+    margin-top: 20px;
+}
+
+.task-overview .top-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.task-overview .bottom-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 10px 0 20px;
+}
+
+.task-overview .bottom-content .task{
+    /* border: 1px solid rgb(94, 94, 94); */
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 120px;
+    height: 50px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 16px #cecece,
+                 -5px -5px 16px #f2f2f2;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.task-overview .bottom-content .task .dot{
+    /* border: 4px solid black; */
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+}
+
+.task-overview .bottom-content .task h3{
+    font-size: 15px;
+    /* display: inline-block; */
+}
+
+.task-overview .bottom-content .task b{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.task-overview .bottom-content .task .task-discription{
+    margin-top: 5px;
+}
+
+/* ----schadual part---- */
+.task-schadual .times {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.task-schadual .times .time-schadual{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.task-schadual .times .time-schadual .time-line{
+    height: 2px;
+    width: 250px;
+    color: black;
+    margin-top: 5px;
+}
+
+.task-schadual .times .time-schadual b{
+    font-weight: 200;
+}
