@@ -18,12 +18,13 @@ let Add = document.getElementsByClassName("box");
 
 
 function Creating(doing, description, dot, clock) {
-
     let first = document.createElement("h4");
-    first.innerHTML(doing)
-
+    console.log(first);
+    first.innerHTML=doing;
+    
+    //creating the descriptions
     let scond = document.createElement("p");
-    scond.innerHTML(description)
+    scond.innerHTML = description;
 
     let Todo = document.createElement("div");
     Todo.classList.add("todo")
@@ -34,11 +35,29 @@ function Creating(doing, description, dot, clock) {
     Todo.appendChild(first);
     Todo.appendChild(scond);
     
+    //creating dot
+    let circl = document.createElement("div");
+    circl.classList.add("dot");
+
+    let parentDot = document.createElement("div");
+    parentDot.classList.add("Dot");
+    parentDot.appendChild(circl);
     // 3 * 62.5
     addiv.appendChild(Todo);
+    addiv.appendChild(parentDot);
     // addiv.classList("add");
-    Add.appendChild(addiv);
+    console.log(addiv);
+    console.log(Add);
     Add.classList("box")
+    Add.appendChild(addiv);
 }
+Task.forEach(element = () =>{
+    Creating(element.doing, element.description, element.dot, element.clock);
+});
 
-Task.forEach(Creating);
+// Task.forEach(Creating);
+// const taskData = {};
+
+const addTask = () => {
+    window.location.pathname("./add-task");
+}
